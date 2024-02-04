@@ -22,4 +22,4 @@ $ python manage.py createsuperuser
 * Django
 * Docker
 
-Версии можно посмотреть тут: [requirements.txt](jetbrains://pycharm/navigate/reference?project=UpTrader&path=menu_tree/requirements.txt)
+Версии можно посмотреть тут: [requirements.txt](https://github.com/BarashekShaun/DjangoMenu/blob/262965ca4ba21f1bac76d66c5b7f7fe09b0d9692/menu_tree/requirements.txt)
