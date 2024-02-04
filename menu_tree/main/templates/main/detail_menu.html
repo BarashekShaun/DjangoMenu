@@ -1,0 +1,14 @@
+{% extends 'main/index.html' %}
+{% load menu_template %}
+
+{% block content %}
+<h2>{{ menu.menu }}</h2>
+<ul>
+{% for obj in submenu %}
+    <dl><a href="{% url 'main:detail_submenu' menu_pk=menu.pk pk=obj.pk %}">
+    <h3>{{ obj.name }}</h3></a>
+    {% draw_items pk=obj.pk %}</dl>
+{% endfor %}
+</ul>
+
+{% endblock %}

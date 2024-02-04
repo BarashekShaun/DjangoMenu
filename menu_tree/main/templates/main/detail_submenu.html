@@ -1,0 +1,13 @@
+{% extends 'main/index.html' %}
+{% load menu_template %}
+
+{% block content %}
+<h2>{{ submenu.menu }} : <a href="#" onclick="history.go(-1)">{{ submenu.name }}</a></h2>
+
+<ul>
+{% for obj in items %}
+    <dt><a href="#">
+    <h3>{{ obj.title }} : {{ obj.description }}</h3></a></dt>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% for obj in menu %}
+<a href="{% url 'main:detail_menu' pk=obj.pk %}">
+    <h3>{{ obj.menu }}</h3> </a>
+{% endfor %}
+
